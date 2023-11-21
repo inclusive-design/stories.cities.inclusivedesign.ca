@@ -1,0 +1,261 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>Human Factor | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="../../js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="../../css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="../../css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/Orator.css">
+
+<script src="../../js/handlebars.js"></script>
+<script src="../../js/markdown-it.js"></script>
+<script src="../../js/binder.js"></script>
+<script src="../../js/transforms.js"></script>
+<script src="../../js/equals.js"></script>
+<script src="../../js/helper.js"></script>
+<script src="../../js/jsonify.js"></script>
+<script src="../../js/md-common.js"></script>
+<script src="../../js/messageHelper_1.js"></script>
+<script src="../../js/renderer_1.js"></script>
+<script src="../../js/ajaxCapable.js"></script>
+<script src="../../js/hasRequiredOptions.js"></script>
+<script src="../../js/md-client.js"></script>
+<script src="../../js/messageHelper.js"></script>
+<script src="../../js/renderer.js"></script>
+<script src="../../js/templateAware.js"></script>
+<script src="../../js/templateFormControl.js"></script>
+<script src="../../js/templateManager.js"></script>
+<script src="../../js/templateMessage.js"></script>
+<script src="../../js/templateRequestAndRender.js"></script>
+
+<script src="../../js/dynamicViewComponentManager.js"></script>
+<script src="../../js/binder_1.js"></script>
+<script src="../../js/block.js"></script>
+<script src="../../js/block-audio.js"></script>
+<script src="../../js/block-image.js"></script>
+<script src="../../js/block-text.js"></script>
+<script src="../../js/block-video.js"></script>
+<script src="../../js/block-timeBased.js"></script>
+<script src="../../js/blockUi.js"></script>
+<script src="../../js/blockUi-audioBlockViewer.js"></script>
+<script src="../../js/blockUi-imageBlockViewer.js"></script>
+<script src="../../js/blockUi-textBlockViewer.js"></script>
+<script src="../../js/blockUi-videoBlockViewer.js"></script>
+<script src="../../js/blockUi-timeBased.js"></script>
+<script src="../../js/base-page-storyView.js"></script>
+<script src="../../js/base-page-storyNotFound.js"></script>
+<script src="../../js/base-page.js"></script>
+<script src="../../js/story.js"></script>
+<script src="../../js/templateManager_1.js"></script>
+<script src="../../js/ui.js"></script>
+<script src="../../js/ui-authorControls.js"></script>
+<script src="../../js/ui-menu.js"></script>
+<script src="../../js/ui-storyViewer.js"></script>
+<script src="../../js/uploader.js"></script>
+<script src="../../js/transforms_1.js"></script>
+<script src="../../js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../css/storyTelling.css">
+<link rel="stylesheet" href="../../css/fluid.css">
+
+<script src="../../js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/cities.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-38lgsf3c-1354">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-38lgsf3c-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-38lgsf3c-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-38lgsf3c-2332" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="../../SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-38lgsf3c-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-38lgsf3c-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container"></div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a href="../../index.html" class="sjrk-st-page-header-main-title">Co-designing<br>Inclusive<br>Cities</a>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li><a href="../../storyBrowse.html">Browse Stories</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-38lgsf3c-7987"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-38lgsf3c-3261"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>Human Factor</h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-38lgsf3c-7977"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-38lgsf3c-7982"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">Human Factor</h2>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+                <div class="sjrk-st-tags-container">
+                    Keywords:
+                    <ul class="sjrkc-st-story-list-tags sjrk-st-story-list-tags">
+                            <li>accessibility, </li>
+                            <li>compassion, </li>
+                            <li>invisibility, </li>
+                            <li>value, </li>
+                            <li>consideration</li>
+                    </ul>
+                </div>
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-3301">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>I was driving into the parking lot and parked in a designated wheelchair parking. When I went to pay I realized it was rather difficult due to non-adjustable parking meter. From my angel seated in my wheelchair, the glare from the lights above me made it difficult for me to see the screen. The number to call for assistance went straight to voicemail. I left a voicemail with my license plate and cellphone number and stated that the machine was not reading my credit card. Digital options were simply not working, and I desperately needed a more human connection for assistance.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-3586">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7af7230-d67f-11e9-878e-13cc3403c489.jpg" alt="Paid parking sign with instructions and contact information">
+        <p class="sjrk-st-block-text-view"></p><p>Paid parking sign with instructions and contact information.
+Sign that reads: Private Property, Pay Parking, Patrolled and Enforced 24 Hrs a Day. If you park and do not display a valid ticket or permit, the rate it $65.75?day or portion thereof. In addition, your vehicle may be subject to being ticketed and/or towed at owner's expense. t. 647.503.6006 www.go-parking.com LOT#G010</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-3870">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7afc050-d67f-11e9-878e-13cc3403c489.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p><p>Parking payment method.</p>
+<p>Showing where to insert credit card or change for payment method on parking meter.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-4156">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>I walked into the grocery store using the specific entrance, and as I was perusing the aisles, I found that there were several staff hovering over me, when all I wanted was for someone to just say “I am here if you need me”. Once I was done getting everything I needed, I found my way to the accessible cashier lane, only to find it unstaffed. So then I went into a regular line, where a customer offered to assist me by taking the groceries out of my bag from the back of my chair onto the conveyor belt. The card reader was also not adjustable. It could not be moved and it was out of my reach, so it was impossible to be able to hide my personal information when I reached over. This was yet another awkward instance where I felt I did not have autonomy.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-4444">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7afe760-d67f-11e9-878e-13cc3403c489.jpg" alt="Shows non-portable card reader which glare from above lights.">
+        <p class="sjrk-st-block-text-view"></p><p>Shows non-portable card reader which glare from above lights.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-4734">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>No staff assisted me; it was simply other shoppers that offered to help. Common empathy of the average person rather than the attentiveness of staff has been a recurring theme of my shopping experience. Without the kindness of strangers, I often find that advocating for myself in what are monitored public spaces increases the feeling of “invisibility”.
+Once I was finished I decided to head into the Mall to use the accessible washroom. I found it to not be so accessible after all, as it was in fact also being used as a non-gendered and family washroom. The support handles were not adjustable, and the automatic door was not working making it much harder to open. There were many other non-accessible features of the washroom such as greatly elevated mirror that started at my forehead, as well as a hand dryer that blew into my face. The toilet seat was significantly lower than my wheelchair, which made it difficult to transfer over, as well as the support bar being too high.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-5026">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7b03580-d67f-11e9-878e-13cc3403c489.jpg" alt="Toilet seat is significantly lower than wheelchair.">
+        <p class="sjrk-st-block-text-view"></p><p>Toilet seat is significantly lower than wheelchair.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-5320">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7b05c90-d67f-11e9-878e-13cc3403c489.jpg" alt="Support bar above shoulder level.">
+        <p class="sjrk-st-block-text-view"></p><p>Support bar above shoulder level.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-5616">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Heading back to the grocery store, I started to realize that mall closure had already begun unannounced. I noticed that the accordion gate between the grocery store and the mall had been closed, so I looked for a security guard to ask for assistance. I communicated that I needed passage through the grocery store to get to where I parked.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-5914">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7b083a0-d67f-11e9-878e-13cc3403c489.jpg" alt="Entrance between mall and grocery store blocked by accordion gate.">
+        <p class="sjrk-st-block-text-view"></p><p>Entrance between mall and grocery store blocked by accordion gate.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-6214">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>He said my only option was to leave through a different exit. This was concerning to me because it was a longer route and I was very tired at this point. I can see through the now closed barricade, other shoppers still using the store on the other side. The solution was simple. I explained to the guard that I needed to go through that exit to get to my vehicle. However, he was resistant. Another customer noticed me on the other side of the gate and approached customer service on my behalf. She was refused by customer service to address the situation. She came over to speak to me, and we discussed the unexpected early mall closure, which had left me feeling unwelcome and devalued as a customer. When she couldn’t find staff to help, she resorted to simply opening the gate herself and letting me through. No special knowledge was required, just compassion. Had this been a digitally timed locking device, this would not have been possible.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-6516">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>I exited the mall using the grocery store entrance and made my way to my parking space. There was a car double-parked between the designated wheelchair permitted spots. I was unable to leave until another compassionate person came along and offered to move my van so that I could open my automated door and extend the ramp for my wheelchair.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-6820">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7b0d1c0-d67f-11e9-878e-13cc3403c489.jpg" alt="Car double parked between two designated wheelchair accessible spots.">
+        <p class="sjrk-st-block-text-view"></p><p>Car double parked between two designated wheelchair accessible spots.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-7126">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/b7b0f8d0-d67f-11e9-878e-13cc3403c489.jpg" alt="Accessibility ramp being lowered to demonstrate appropriate space needed in between vans in parking spaces.">
+        <p class="sjrk-st-block-text-view"></p><p>Accessibility ramp being lowered to demonstrate appropriate space needed in between vans in parking spaces.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-38lgsf3c-7434">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Throughout my day I encountered several instances where getting around was difficult. Barriers to access is a common experience in my daily life and I am appreciative of the awareness and assistance of others when available. This proves that the human factor must remain in designing. When ignored it can affect all aspects of a person's physical, emotional psychological , and social interactions.</p>
+</div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>The Storytelling Project is led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+
+</body></html>

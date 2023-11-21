@@ -1,0 +1,236 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>smart city, bringing back civilized to civilization.  | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="../../js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="../../css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="../../css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/Orator.css">
+
+<script src="../../js/handlebars.js"></script>
+<script src="../../js/markdown-it.js"></script>
+<script src="../../js/binder.js"></script>
+<script src="../../js/transforms.js"></script>
+<script src="../../js/equals.js"></script>
+<script src="../../js/helper.js"></script>
+<script src="../../js/jsonify.js"></script>
+<script src="../../js/md-common.js"></script>
+<script src="../../js/messageHelper_1.js"></script>
+<script src="../../js/renderer_1.js"></script>
+<script src="../../js/ajaxCapable.js"></script>
+<script src="../../js/hasRequiredOptions.js"></script>
+<script src="../../js/md-client.js"></script>
+<script src="../../js/messageHelper.js"></script>
+<script src="../../js/renderer.js"></script>
+<script src="../../js/templateAware.js"></script>
+<script src="../../js/templateFormControl.js"></script>
+<script src="../../js/templateManager.js"></script>
+<script src="../../js/templateMessage.js"></script>
+<script src="../../js/templateRequestAndRender.js"></script>
+
+<script src="../../js/dynamicViewComponentManager.js"></script>
+<script src="../../js/binder_1.js"></script>
+<script src="../../js/block.js"></script>
+<script src="../../js/block-audio.js"></script>
+<script src="../../js/block-image.js"></script>
+<script src="../../js/block-text.js"></script>
+<script src="../../js/block-video.js"></script>
+<script src="../../js/block-timeBased.js"></script>
+<script src="../../js/blockUi.js"></script>
+<script src="../../js/blockUi-audioBlockViewer.js"></script>
+<script src="../../js/blockUi-imageBlockViewer.js"></script>
+<script src="../../js/blockUi-textBlockViewer.js"></script>
+<script src="../../js/blockUi-videoBlockViewer.js"></script>
+<script src="../../js/blockUi-timeBased.js"></script>
+<script src="../../js/base-page-storyView.js"></script>
+<script src="../../js/base-page-storyNotFound.js"></script>
+<script src="../../js/base-page.js"></script>
+<script src="../../js/story.js"></script>
+<script src="../../js/templateManager_1.js"></script>
+<script src="../../js/ui.js"></script>
+<script src="../../js/ui-authorControls.js"></script>
+<script src="../../js/ui-menu.js"></script>
+<script src="../../js/ui-storyViewer.js"></script>
+<script src="../../js/uploader.js"></script>
+<script src="../../js/transforms_1.js"></script>
+<script src="../../js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../css/storyTelling.css">
+<link rel="stylesheet" href="../../css/fluid.css">
+
+<script src="../../js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/cities.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-2j1cx9bo-1354">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-2j1cx9bo-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-2j1cx9bo-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-2j1cx9bo-2332" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="../../SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-2j1cx9bo-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-2j1cx9bo-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container"></div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a href="../../index.html" class="sjrk-st-page-header-main-title">Co-designing<br>Inclusive<br>Cities</a>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li><a href="../../storyBrowse.html">Browse Stories</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-2j1cx9bo-6757"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-2j1cx9bo-3261"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>smart city, bringing back civilized to civilization. </h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-2j1cx9bo-6749"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-2j1cx9bo-6754"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">smart city, bringing back civilized to civilization. </h2>
+                    <p class="sjrkc-st-story-author sjrk-st-story-author">by Cathy Walker</p>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+                <div class="sjrk-st-tags-container">
+                    Keywords:
+                    <ul class="sjrkc-st-story-list-tags sjrk-st-story-list-tags">
+                            <li>Gentrification.  Greenspace.</li>
+                    </ul>
+                </div>
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-3301">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Since the beginning of our time, my ancestors walked this land.  I have always felt great comfort knowing that where my footsteps, my ancestors have also stepped in the same place, long ago.   At one time we had full access to our land, water, and all that resided in and on it. We had access to all of our medicines, to our language, to our culture and ceremonies.   We could stand on the water’s edge and drink directly from the shores, we had all that we needed to survive and thrive in our communities following the seasons, the sun the moon and the stars.  We travelled freely along the lands surrounded by its comforts and bounty and were a greater part of that community, helping anyone in need and being part of that village.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-3586">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/fa119ca0-d640-11e9-9605-5d78aa190f9a.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-3870">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Since the colonization of man, the connection to the earth has suffered.  Where I was once able to put my feet in the water, I now have to stand on a pier looking over.  Huge condo developments deny my access to it and it has become a commodity that has been privatized and commercialized.   All the plant medicines have been replaced and colonized as well by plants and seeds from other lands.  Concrete laying over these plants, the seeds have since gone to sleep.  Where we were able to view the travels of the sun, the moon and the constellations, the buildings have grown taller and taller, fighting for real estate space in the sky, blockin out our access to it.  Large trees have been replaced by much smaller ones and our access to green space has been denied.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-4156">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/fa11c3b0-d640-11e9-9605-5d78aa190f9a.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-4444">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/fa145bc0-d640-11e9-9605-5d78aa190f9a.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-4734">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Losing access to our land and to the rhythm of the seasons has removed all empathy and compassion from us, as a whole,  so that what we have done to the land, we are now doing to the people.  We have become focused on development and economic growth  at the detriment of the fringed society where we are made to feel invisible and unheard.  When I walked through my neighbourhood, old storefronts that were once family owned, are now replaced with larger brand named stores that could afford the high rental rates.  Cultural centers, Free Clinics and public access buildings were being relocated and replaced by starbucks, Tim Hortons, Urban Outfitters and other corporate entities, removed all the individuality that made up our neighbourhood affecting single mothers, refugees, All homeless, those with addictions and mental health affected communities.  Access to Shelters, food banks, walk in clinics being replaced by private practices in  a tiered healthcare system, shelters are moved to the suburbs, further denying basic human needs to the people that make up my community so that they have no choice but to move away.  The green spaces that I enjoyed with my children growing up, became parking lots and then became condo developments, which only the rich can afford, making me feel like a stranger in my own neighborhood.</p>
+<p>All that I have witnessed in my community is a direct result of colonization.  The taking over of lands replacing inaccessible resources to those who cannot afford and gentrifying spaces making them inaccessible causes those that are affected by these changes to suffer as a result.  As a single mother with three children, I cannot afford to move out of our one bedroom apartment and with all the development makes affordable housing a pipe dream.</p>
+<p>Elder Jay Mason told me once, that there is nothing civilized about civilization and long after he is gone, I can see this for my own eyes.  In the presence of urban development I see fragmentation of humanity, further marginalizing the most vulnerable and weak. Much like cement is paved over nature, I see the same happening to people.</p>
+<p>As I walk the streets I see directly how the homeless are affected, how police presence is more prominent. How a homeless man is bullied because he had alcohol open in a park, gets a 300 dollar ticket and a six month ban from the park (his home) while they look the other way at all the public drinking that is available and even encouraged at street festivals and beer gardens, throughout the city.    Buildings and public spaces are designed to  make it impossible for those that are homeless to find a place to sleep, or segmented benches making laying down impossible.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-5026">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/fa14f800-d640-11e9-9605-5d78aa190f9a.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-5320">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Police involvement is based on personal biases and even Indigenous police have been assimilated to the point where they are enforcing colonial laws against their own people for simply being visible.  This makes me concerned, not only for our community that once was, but for the future of my children, that they will be scrutinized by the families and the children they grew up with are now afraid of them because of their socio-economic status.</p>
+<p>Police involvement is based on personal biases and even Indigenous police have been assimilated to the point where they are enforcing colonial laws against their own people for simply being visible.  This makes me concerned, not only for our community that once was, but for the future of my children, that they will be scrutinized by the families and the children they grew up with are now afraid of them because of their socio-economic status.</p>
+<p>In one of my travels I came across a dandelion growing in the crack of the sidewalk and it reminded me of the resiliency of mother nature.  How resilient our plant medicines are that even though we have long paved over them, the seeds have been asleep and are now waking up.  It reminded me of the resiliency of humans and how we strive for that connection, and although we may only be a plant creeping up from a crack, underneath that sidewalk, our roots are connected to each other. Where the government has failed to help the people, I have seen the roots in the community grow and reach out to help eachother.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-5616">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/fa151f10-d640-11e9-9605-5d78aa190f9a.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-5914">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Where again those without monetary gain are usually the most charitable toothers in their community.  Where government programs have failed, grassroots programs have thrived.  People leading their own patrols, policing their own communities.  Opening their doors, feeding the people and being that village.  I have seen the outpour of kindness and generosity from those who have nothing because it is in their nature to give because they know what it feels to live without.</p>
+<p>Thinking back to the uncivilized nature of civilization makes me wonder how can we improve the urban environment to include all.  I am reminded of my traditional background and how I look towards how we survived without the amenities that now give us comfort.  How when we think of smart city, my idea of smart doesn’t involve Electronic apps, or billboards with information, surveillance cameras everywhere and constant light and sound pollution.  That all of these mess with our circadian rhythm, turning us into insomniacs and further harms those like my sons with autism, who have sensitivities to lights and sounds causing stress, overthinking and mental health issues due to constant information overload.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-2j1cx9bo-6214">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>A smart city for me would focus on sustainable living practices for all that improve our everyday living and the communities we live in.</p>
+<p>Incorporating more green spaces that are not only accessible to all, but also are affordable to all.  Using rammed earth, strawbale, adobe, cobb, in our structures  to reduce our strain on the environment. Making Internal walls out of recycled products like pop cans, plastic water and glass bottles so that they don’t end up in landfills.   I think about how this type of housing would benefit all of my friends on the street and make affordable housing more accessable. How this type of thinking can benefit the design of a smart city which would create accessible homes for low income as well as for those that can afford market rate. A tiered building system so that each apartment can growtheir own food with passive solar windows and out door patios that encourage the owners to grow their own foods.   Not only is affordable housing important,  but it is also essential to change our ways of thinking so that different economic brackets can live side by side without stigma and judgement.  That a smart city would embrace all public access.   I dream that our public transportation would be tied into our tax system so that it would be free for all, or that it would be geared to income.   So that it would be more equitable for people like me don’t have to pick between putting money on a presto card or feeding my children that week, just so that I can go to work to support my family.  The idea of an equitable society is a true smart city, where it is accessible to your needs and not based on your socio-economic status.  I see a community being supported like all aspects of the medicine wheel.  That it would support the mental, emotional, physical, spiritual aspects that holistically support our well being.</p>
+<p>All of those aspects of the human conditioning can be healed through greenspace.
+Removing contained gardens and making them accessible to the people so that all Schools and buildings have greenhouses, where children can learn how to grow their own food and lunch and breakfast programs in the school can benefit from it.  As well as nuturing the childs connection to nature.   All green spaces contained lush gardens that can provide nourishment as well as stimulation to the senses.  I see a community of food gardens, Healing gardens, fruit trees, edible flowers making food accessible to all. This is the way to moving towards a smart city, and to bring the idea of civilized, back to civilization.</p>
+</div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>The Storytelling Project is led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+
+</body></html>

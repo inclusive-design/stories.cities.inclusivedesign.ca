@@ -1,0 +1,266 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>Jame's Story | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="../../js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="../../css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="../../css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/Orator.css">
+
+<script src="../../js/handlebars.js"></script>
+<script src="../../js/markdown-it.js"></script>
+<script src="../../js/binder.js"></script>
+<script src="../../js/transforms.js"></script>
+<script src="../../js/equals.js"></script>
+<script src="../../js/helper.js"></script>
+<script src="../../js/jsonify.js"></script>
+<script src="../../js/md-common.js"></script>
+<script src="../../js/messageHelper_1.js"></script>
+<script src="../../js/renderer_1.js"></script>
+<script src="../../js/ajaxCapable.js"></script>
+<script src="../../js/hasRequiredOptions.js"></script>
+<script src="../../js/md-client.js"></script>
+<script src="../../js/messageHelper.js"></script>
+<script src="../../js/renderer.js"></script>
+<script src="../../js/templateAware.js"></script>
+<script src="../../js/templateFormControl.js"></script>
+<script src="../../js/templateManager.js"></script>
+<script src="../../js/templateMessage.js"></script>
+<script src="../../js/templateRequestAndRender.js"></script>
+
+<script src="../../js/dynamicViewComponentManager.js"></script>
+<script src="../../js/binder_1.js"></script>
+<script src="../../js/block.js"></script>
+<script src="../../js/block-audio.js"></script>
+<script src="../../js/block-image.js"></script>
+<script src="../../js/block-text.js"></script>
+<script src="../../js/block-video.js"></script>
+<script src="../../js/block-timeBased.js"></script>
+<script src="../../js/blockUi.js"></script>
+<script src="../../js/blockUi-audioBlockViewer.js"></script>
+<script src="../../js/blockUi-imageBlockViewer.js"></script>
+<script src="../../js/blockUi-textBlockViewer.js"></script>
+<script src="../../js/blockUi-videoBlockViewer.js"></script>
+<script src="../../js/blockUi-timeBased.js"></script>
+<script src="../../js/base-page-storyView.js"></script>
+<script src="../../js/base-page-storyNotFound.js"></script>
+<script src="../../js/base-page.js"></script>
+<script src="../../js/story.js"></script>
+<script src="../../js/templateManager_1.js"></script>
+<script src="../../js/ui.js"></script>
+<script src="../../js/ui-authorControls.js"></script>
+<script src="../../js/ui-menu.js"></script>
+<script src="../../js/ui-storyViewer.js"></script>
+<script src="../../js/uploader.js"></script>
+<script src="../../js/transforms_1.js"></script>
+<script src="../../js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../css/storyTelling.css">
+<link rel="stylesheet" href="../../css/fluid.css">
+
+<script src="../../js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/cities.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-6lgw54zf-1354">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-6lgw54zf-2085" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-6lgw54zf-2085" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-6lgw54zf-2085" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="../../SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-6lgw54zf-2085" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-6lgw54zf-2085" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container"></div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a href="../../index.html" class="sjrk-st-page-header-main-title">Co-designing<br>Inclusive<br>Cities</a>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li><a href="../../storyBrowse.html">Browse Stories</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-6lgw54zf-9567"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-6lgw54zf-3261"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>Jame's Story</h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-6lgw54zf-9557"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-6lgw54zf-9562"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">Jame's Story</h2>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-3301">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>It was a cool and sunny winter day. James was going to the store to buy Cheezies to take to his seniors club but today’s trip is not like a regular day, because he has a cast on his left arm. Luckily for James he was right-handed. It was still tricky for him to get around with his cane. But today, James was determined to go outside and get what he needed for his new seniors club. James was not sure what he was getting himself into with this shopping trip but he was willing to give it a try and see what it was like shopping with a cast.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-3586">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/02023530-d68e-11e9-878e-13cc3403c489.jpeg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-3870">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>James grabbed his backpack and put it over his shoulder a bit clumsily.
+James left his apartment, slamming his door behind him. “It drives me up the wall that I have to balance my cane and bag with this bum arm. That stupid driver! If he had just waited until I had sat down before moving, none of this would have happened. I wouldn’t have fallen and broken my arm.” Unfortunately, it happened all the time that the bus driver would drive off in a rush. James wished that there was a signal to let the driver know when he was safely seated.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-4156">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/02025c40-d68e-11e9-878e-13cc3403c489.jpeg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-4444">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>After walking for a block, James began to calm down. He felt like he belonged because this was his neighbourhood. He saw people that he knew and started to feel better. He felt that he was getting all the garbage out of his mind. James arrived at the store in a better mood. He enjoyed coming to the store because he knew what it was all about. He could go out and get what he wanted all by himself and he liked that experience. It was so nice that the store was near James’ home. He could go whenever he wanted.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-4734">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/02028350-d68e-11e9-878e-13cc3403c489.jpeg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-5026">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>James always felt that he could be independent at this store because it had a railing on both sides of the entrance so he felt secure on the step and he knew where his favorite foods were. However, today James is buying Cheezies, which is something new and he doesn't know where to find it. James looked for a friendly face and spotted his favorite cashier. He asked her for help and she was happy to help him to buy Cheezies. The cashier even helped James puts the Cheezies in his bag. It’s hard to manage a zipper with one hand and keep his cane from falling.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-5320">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>On the way home, James glances at his watch and realises that he’s running late. “Oh no, I booked Wheel Trans for 1:00”  James had to be at the front of his building on time because Wheel Trans would not wait and if he missed it he wouldn’t get to go. James hurried home but had to be careful because it was winter and the sidewalks could be slippery. “It's not the ice you see that you have to worry about,” James muttered to himself. James arrived at the front of his building, “made it!” James felt relief. Despite the blue sky it’s chilly so James decides to wait in the foyer. “Ah, that’s better.” James let the warmth from the heater take the chill off.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-5616">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>James keeps a close out the door as he waits and waits and waits. James glances at his watch, and waits some more. Finally, at 1:40, Wheel Trans arrived. “I wish I could take the bus like I used to but it just isn’t safe anymore.” James felt anger at the driver for being so late but he smiled anyway and was polite because he might get the driver again and he relies on the driver and doesn’t want to get in his bad books.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-5914">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/0202aa60-d68e-11e9-878e-13cc3403c489.jpeg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-6214">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Safely on his way to the senior’s club at the community centre, James lets the frustration of the wait go and begins to feel excited about getting out. James had been to seniors club a few times and he liked going but he was still feels like the new person and, so he is a little nervous too. Today is the first time Jame is going to the club without Anib, his support worker. James thought Anib was the friendliest person he had ever met. Anib knew James’ interests and helped him find the seniors club to join. Anib also gave James the support that he would need to get to the club, meet the coordinator and feel comfortable getting to know the other members. Anib helped him find his way around and know where things are.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-6516">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>James had really missed people since he retired from his job and he missed his responsibilities of helping out and giving back to the community. He was an expert at what he did and had enjoyed every minute of it. This senior’s club was a chance for James to meet new people and to have a new responsibility and a role. This week, James is part of the food committee and has the job of helping to organize the snacks.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-6820">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/0202d170-d68e-11e9-878e-13cc3403c489.jpeg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-7126">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>It was great that the seniors had their own space within a larger community centre. They had a room just for them and for their things but could see all the different activities around them, kids and parents, newcomers learning English, young people exercising. There was a lot going on all the time but, in their space, things were slower- paced and quieter. The room was just for them and everything that they needed was in that one spot.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-7434">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>When James arrived at the senior’s club, he began to set up the food table and along came Wally. Inwardly, James sighed. Wally was never happy unless he was telling people what to do. “Don’t put the Cheezies in the chip bowl. “ Wally sniped.  James wanted to say, “Cheezies, chips what’s the difference?” but talking to Wally was like talking to a wall. “Perfect name,” thought James, he didn’t feel safe with Wally and wondered why Wally couldn’t be friendly.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-7744">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/0202f880-d68e-11e9-878e-13cc3403c489.jpeg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-8056">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/0202f881-d68e-11e9-878e-13cc3403c489.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-8370">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>James looked for the Cheezie bowl but had know idea which bowl would keep him out of trouble with Wally so he turned to the activities coordinator, Mary, who was always willing to help people who need help. Mary helped James with the bowl and thought about the problem James’ discomfort with Wally and Wally’s need to have everything just so. Mary knew from her meetings with Anib that James was a good listener and enjoyed hearing about everyone’s day. Mary asked James to lead the group in sharing their stories from the past week. James was good at making everyone feel comfortable and listened well. He made people feel heard. Even Wally was willing to share his stories. James and Wally realised that they had some things in common.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-8686">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>After story-sharing, Mary suggested that James and Wally work together to label the cupboards and the things inside so that everyone would know where everything goes and what each thing is for. James is really good at drawing and he uses pictures to help label the bowls and Wally prints neatly so he writes all of the words. From that day on, everyone could know which bowl was for Cheezies and which was for chips.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-6lgw54zf-9004">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/020346a0-d68e-11e9-878e-13cc3403c489.jpg" alt="">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>The Storytelling Project is led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+
+</body></html>
